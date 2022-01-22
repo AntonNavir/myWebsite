@@ -11,11 +11,11 @@ header{
 .header_cont{
     background-color: rgb(227, 215, 255);
     padding: 10px;
+    display: grid;
 }
 .header_cont > a{
-    margin: auto 0;
-    height: inherit;
-    display: inline-block;
+    margin: auto;
+    text-align: center;
 }
 .navbar ul{
     display: none;
