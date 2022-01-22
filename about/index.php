@@ -1,3 +1,3 @@
 <?php
-readfile("contacts.html");
+readfile("about.html");
 ?>
