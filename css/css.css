@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin:0;
+}
+header{
+    display:block;
+    margin-bottom:10px;
+}
+.header_cont{
+    height: 40px;
+    background-color: rgb(227, 215, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+  }
+
+.navbar li:hover ul { display: block; }
+.navbar, .navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+.navbar {
+    height: 30px;
+    background-color: #666;
+    padding-left: 25px;
+    display:flex;
+    justify-content: center;
+  }
+.navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+  }
+.navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+.navbar ul li { float: none; }
+.navbar li:hover { background-color: #f90; }
+.navbar ul li:hover { background-color: #666; }
+
+footer {
+    height: 40px;
+    background-color: #666;
+    font-size: 20px;
+    text-align: center;
+    padding: 1em;
+}
+main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+td{
+    border: 5px groove #CCCCCC;
+    padding: 10px;
+    background-color:darkgrey;
+}
+.main_global {
+    flex: 0;
+    background-color: rgb(175, 162, 255);
+    font-size: 20px;
+    padding: 1em;
+    margin:10px;
+}
+.main_1screen_card {
+    padding: 30px;
+    background-image: url("../img/travel.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main_1screen_card-h1 {
+    font-size: 30px;
+    color: rgb(227, 215, 255);
+}
+.main_1screen_mail-btn {
+    padding-left: 30px;
+    background-image: url("../img/mail.png");
+    background-position: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color:rgb(227, 215, 255);
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin:5px;
+}
+h2 {
+    font-size: 30px; 
+    margin:0px;
+}
+a {text-decoration: none;}
+table {table-layout: fixed; margin:auto}
+.col1 {width: 160px;}
+.coln {width: 160px; display: block;}
+.text-input {width: 160px;}
+textarea {resize:none;}
