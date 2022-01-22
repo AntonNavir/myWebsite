@@ -9,13 +9,13 @@ header{
     margin-bottom:10px;
 }
 .header_cont{
-    height: 40px;
     background-color: rgb(227, 215, 255);
-    text-align: center;
     padding: 10px;
-    font-size: 30px;
-    display:flex;
-    justify-content: space-between;
+}
+.header_cont > a{
+    margin: auto 0;
+    height: inherit;
+    display: inline-block;
 }
 .navbar ul{
     display: none;
@@ -33,7 +33,6 @@ header{
 .navbar {
     height: 30px;
     background-color: #666;
-    padding-left: 25px;
     display:flex;
     justify-content: center;
   }
