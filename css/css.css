@@ -125,6 +125,7 @@ h2 {
 	height: 32px;
 }
 .github a:hover {background: #191919;}
+.email a:hover {background: #5bc7ff;}
 .telegram a:hover {background: #249bd7;}
 .vk a:hover {background: #4a76a8;}
 .youtube a:hover {background: #c4302b;}
@@ -136,5 +137,6 @@ table {table-layout: fixed; margin:auto}
 .text-input {width: 160px;}
 textarea {resize:none;}
 iframe{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
