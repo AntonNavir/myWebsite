@@ -71,7 +71,6 @@ td{
     background-color:darkgrey;
 }
 .main_global {
-    flex: 0;
     background-color: rgb(175, 162, 255);
     font-size: 20px;
     padding: 1em;

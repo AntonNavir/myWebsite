@@ -8,6 +8,7 @@
     <title>Штаны за 40 гривен</title>
     <link rel="stylesheet" href="../css/css.css">
     <link rel="stylesheet" href="../css/index_content.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 
 <body>
@@ -25,73 +26,39 @@
     </header>
     <main>
         <div class="main_global">
-            <h1>Анкета</h1>
-            <div style="text-align: center">
-                <p>Чтобы оформить документы, нам нужно знать, кто вы. Пожалуйста, заполните все поля.</p>
-                <form action="#" method="POST">
-                    <table>
-                        <col class="col1">
-                        <col span="9" class="coln">
-                        <tr>
-                            <td>Имя</td>
-                            <td><input type="text" name="first_name" class="text-input" maxlength="18" required autocomplete="on"></td>
-                        </tr>
-                        <tr>
-                            <td>Фамилия</td>
-                            <td><input type="text" name="last_name" class="text-input" maxlength="18" required autocomplete="on"></td>
-                        </tr>
-                        <tr>
-                            <td>Пол</td>
-                            <td><label>
-                                    <input type="radio" name="title" value="mr" checked>
-                                    М
-                                </label>
-                                <label>
-                                    <input type="radio" name="title" value="mrs">
-                                    Ж
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>E-Mail</td>
-                            <td><input type="email" name="email" class="text-input"></td>
-                        </tr>
-                        <tr>
-                            <td>Пароль</td>
-                            <td><input type="password" name="password" class="text-input"></td>
-                        </tr>
-                        <tr>
-                            <td>Телефон</td>
-                            <td><input type="tel" name="phone" class="text-input" maxlength="11" required></td>
-                        </tr>
-                        <tr>
-                            <td>Страна</td>
-                            <td>
-                                <select name="country">
-                                    <option>Канада</option>
-                                    <option>Франция</option>
-                                    <option>Германия</option>
-                                    <option>Италия</option>
-                                    <option>Япония</option>
-                                    <option>Россия</option>
-                                    <option>Великобритания</option>
-                                    <option>США</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Что вам нужно страховать?</td>
-                            <td><textarea rows="5" cols="21" name="comment"></textarea></td>
-                        </tr>
-                    </table>
-                    <label>
-                        <input type="checkbox" name="terms" required>
+            <form class="decor">
+                <div class="form-inner">
+                <h3>Написать нам</h3>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <div class="not_text">
+                    <label>Мужской<input type="radio" name="title" value="mr"></label>
+                    <label>Женский<input type="radio" name="title" value="mrs"></label>
+                </div>
+                <div class="not_text">
+                    <label>Выберите страну <select name="country">
+                        <option>Канада</option>
+                        <option>Франция</option>
+                        <option>Германия</option>
+                        <option>Италия</option>
+                        <option>Япония</option>
+                        <option>Россия</option>
+                        <option>Великобритания</option>
+                        <option>США</option>
+                    </select></label>
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="tel" placeholder="Телефон">
+                <textarea placeholder="Сообщение..." rows="3"></textarea>
+                <div class="not_text">
+                    <label><input type="checkbox" name="terms" required>
                         Я согласен с <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">условиями использования</a>
                     </label>
-                    <input type="submit" value="Отправить">
-                    <input type="reset" value="Очистить">
+                </div>
+                <input type="submit" value="Отправить">
+                </div>
                 </form>
-            </div>
         </div>
     </main>
     <footer>копирайт не бери</footer>
