@@ -54,11 +54,12 @@ header{
 .navbar ul li:hover { background-color: #666; }
 
 footer {
-    height: 40px;
+    height: auto;
     background-color: #666;
     font-size: 20px;
     text-align: center;
     padding: 1em;
+    color: rgb(227, 215, 255);
 }
 main {
     flex:1;
@@ -104,9 +105,36 @@ h2 {
     font-size: 30px; 
     margin:0px;
 }
+.social {display: inline-block;}
+.social a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+}
+.social a:hover {color: #fff;}
+.social svg {
+	margin-top: 7px;
+	width: 32px;
+	height: 32px;
+}
+.github a:hover {background: #191919;}
+.telegram a:hover {background: #249bd7;}
+.vk a:hover {background: #4a76a8;}
+.youtube a:hover {background: #c4302b;}
+
 a {text-decoration: none;}
 table {table-layout: fixed; margin:auto}
 .col1 {width: 160px;}
 .coln {width: 160px; display: block;}
 .text-input {width: 160px;}
 textarea {resize:none;}
+iframe{
+    width: 100%;
+}
