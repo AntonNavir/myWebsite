@@ -32,29 +32,32 @@
                 <input type="text" required placeholder="Имя *">
                 <input type="text" required placeholder="Фамилия *">
                 <div class="not_text">
-                    <label>Мужской<input type="radio" name="title" value="mr" checked></label>
-                    <label>Женский<input type="radio" name="title" value="mrs"></label>
+                    <label for="radio1">Мужской</label>
+                    <input type="radio" name="title" id="radio1" value="mr" checked>
+                    <label for="radio2">Женский</label>
+                    <input type="radio" name="title" id="radio2" value="mrs">
                 </div>
                 <div class="not_text">
-                    <label>Выберите страну <select name="country">
+                    <label>Выберите страну</label>
+                    <select name="country">
                         <option>Россия</option>
                         <option>Канада</option>
                         <option>Франция</option>
                         <option>Германия</option>
                         <option>Италия</option>
-                        <option>Япония</option>
-                        <option>Великобритания</option>
+                        <option>Япония</option>>
                         <option>США</option>
-                    </select></label>
+                    </select>
                 </div>
                 <input type="email" required placeholder="Email *">
                 <input type="password" required placeholder="Пароль *">
                 <input type="tel" placeholder="Телефон">
                 <textarea placeholder="Сообщение *" required rows="3"></textarea>
-                <div class="not_text">
-                    <label><input type="checkbox" name="terms" required>
+                <div class="not_text terms">
+                    <label for="terms">
                         Я согласен с <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">условиями использования *</a>
                     </label>
+                    <input type="checkbox" name="terms" id="terms" required>
                 </div>
                 <input type="submit" value="Отправить">
                 </div>
